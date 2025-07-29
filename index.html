@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberAware - Cyberattack Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-text">Welcome to CyberAware</div>
+  </div>
+
+  <!-- Instruction Landing Section -->
+  <section id="landing">
+    <div class="landing-card">
+      <h2>🧭 How to Use CyberAware</h2>
+      <ul>
+        <li><strong>Explore the Map:</strong> Pan and zoom to view global cyberattacks.</li>
+        <li><strong>Click a Marker:</strong> View detailed info about the attack, type, and prevention tips.</li>
+        <li><strong>Use Filters:</strong> Narrow down attacks by type, region, or time.</li>
+        <li><strong>Stay Aware:</strong> Learn how to protect against major threats.</li>
+      </ul>
+      <button id="scrollBtn" class="btn">Explore Map</button>
+    </div>
+  </section>
+
+  <!-- Background Effects -->
+  <div id="particles-js"></div>
+
+  <!-- Map Section -->
+  <div class="map-background" id="mapSection">
+    <div id="map"></div>
+  </div>
+
+  <!-- Cards for Attacks -->
+  <div id="card-container"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpUK-y9GWHEHGwTM79jEEOFwnUTaCRG_o&callback=initMap" async defer></script>
+</body>
+</html>
