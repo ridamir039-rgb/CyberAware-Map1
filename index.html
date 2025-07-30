@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberAware - Cyberattack Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-text">Welcome to CyberAware</div>
+  </div>
+
+  <!-- Instruction Landing Section -->
+  <section id="landing">
+    <div class="landing-card">
+      <h2>🧭 How to Use CyberAware</h2>
+      <ul>
+        <li><strong>Explore the Map:</strong> Pan and zoom to view global cyberattacks.</li>
+        <li><strong>Click a Marker:</strong> View detailed info about the attack, type, and prevention tips.</li>
+        <li><strong>Use Filters:</strong> Narrow down attacks by type, region, or time.</li>
+        <li><strong>Stay Aware:</strong> Learn how to protect against major threats.</li>
+      </ul>
+      <button id="scrollBtn" class="btn">Explore Map</button>
+    </div>
+  </section>
+
+  <!-- Background Effects -->
+  <div id="particles-js"></div>
+
+  <!-- Map Section -->
+  <div class="map-background" id="mapSection">
+    <div id="map"></div>
+  </div>
+
+  <!-- Cards for Attacks -->
+  <div id="card-container"></div>
+
+  <!-- Contact Us Scroll Button -->
+  <div style="text-align: center; margin: 30px;">
+    <button id="contactBtn" class="btn">Contact Us</button>
+  </div>
+
+  <!-- Contact Us Button -->
+  <button id="contactToggle" class="contact-toggle-btn">Contact Us</button>
+
+  <!-- Contact Us Playcard -->
+  <div class="card contact-form-card" id="contactCard" style="display: none;">
+    <h3>Contact Us</h3>
+    <p>If you have any questions, suggestions, or feedback, feel free to reach out:</p>
+    <p><strong>Email:</strong> ridamir039@gmail.com</p>
+    <p><strong>Phone:</strong> +92-309-5091714</p>
+    <p><strong>Location:</strong> Islamabad, Pakistan</p>
+    <form id="contactForm" action="https://formsubmit.co/ridamir039@gmail.com" method="POST">
+  <label for="userEmail">Your Email</label>
+  <input type="email" id="userEmail" name="email" required placeholder="your@email.com" />
+
+  <label for="message">Your Message</label>
+  <textarea id="message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
+  <button type="submit" class="btn">Send Message</button>
+    <input type="hidden" name="_redirect" value="thank-you.html" />
+</form>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpUK-y9GWHEHGwTM79jEEOFwnUTaCRG_o&callback=initMap" async defer></script>
+</body>
+</html>
